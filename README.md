@@ -14,6 +14,7 @@ Again, naming conventions will likely need to be modified for this program based
 
 
 This project answers the following questions:
+
 RQ 1: Is there a relationship between all external weather factors and the types of crimes committed?
     H0 1: There is not a relationship between all external weather factors and the types of crimes committed.
     HA 1: There is a relationship between all external weather factors and the types of crimes committed.
