@@ -17,7 +17,7 @@ ChicagoWeather$DATE = as.POSIXct(ChicagoWeather$DATE, format="%m/%d/%Y")
 #Convert Updated.On variable from character to date data type
 OriginalChicagoCrimes$Updated.On = as.POSIXct(OriginalChicagoCrimes$Updated.On, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
 
-#Classify Primary.Type into property(1), nonviolent(2), and violent(3) categories
+#Classify Primary.Type into property, nonviolent, and violent categories
 OriginalChicagoCrimes$Primary.Type = ifelse(OriginalChicagoCrimes$Primary.Type %in% c("BURGLARY","THEFT","MOTOR VEHICLE THEFT","ARSON",
 "CRIMINAL DAMAGE"), 1, ifelse(OriginalChicagoCrimes$Primary.Type %in% c("HOMICIDE","CRIM SEXUAL ASSAULT","ROBBERY","BATTERY","RITUALISM",
 "ASSAULT","HUMAN TRAFFICKING"),3,2))
